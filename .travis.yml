@@ -9,7 +9,7 @@ addons:
       - gcc-7
       - g++-7
       - libopenblas-dev
-      - liblapack-dev
+      - libdlib-dev
 script:
   - export CC=gcc-7
   - export CXX=g++-7
