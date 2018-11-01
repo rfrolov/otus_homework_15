@@ -3,12 +3,13 @@ language: cpp
 addons:
   apt:
     sources:
+      - sourceline: "deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe"
       - ubuntu-toolchain-r-test
     packages:
       - gcc-7
       - g++-7
       - libopenblas-dev
-      - libdlib-dev
+      - liblapack-dev
 script:
   - export CC=gcc-7
   - export CXX=g++-7
