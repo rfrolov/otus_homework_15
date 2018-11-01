@@ -1,5 +1,5 @@
 ###########################################################################################################
-# Пример использования: gnuplot -e "clusters='2';data_file='data.txt';output_file='output.png'" get_png.plt
+# Пример использования: gnuplot -e "clusters=$1;data_file='result.txt';output_file='output.png';radius=0.5" get_png.plt
 # Где:
 # clusters    - Количество кластеров.
 # data_file   - Имя файла входящих данных.
@@ -8,7 +8,7 @@
 ###########################################################################################################
 
 
-set term pngcairo size 800,600
+set term png size 800,600
 set output output_file
 set key outside
 set datafile separator ";"
